@@ -59,15 +59,19 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-[#0A0A0A] border-b border-white/10 select-none">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
+      <div className="w-[90%] mx-auto h-20 flex items-center justify-between">
+        
+        {/* LOGO IMAGE */}
         <a href="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl tracking-wider text-white">
-            Herts Signs <span className="text-hs-pink">+</span> Graphics
-          </span>
+          <img 
+            src="/img/HS_Logo_white.png" 
+            alt="Herts Signs Logo" 
+            className="h-10 md:h-12 w-auto object-contain" 
+          />
         </a>
 
         {/* Desktop Nav links */}
-        <nav className="hidden xl:flex items-center gap-6 font-condensed text-[14px] font-bold tracking-wider uppercase text-white/80">
+        <nav className="hidden xl:flex items-center gap-5 font-condensed text-[13.5px] font-bold tracking-wider uppercase text-white/80">
           {navItems.map((item, idx) => {
             if (item.dropdown) {
               const isOpen = activeDropdown === item.label;
