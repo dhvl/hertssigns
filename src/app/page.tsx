@@ -2,16 +2,14 @@
 
 import React, { useState } from "react";
 import { 
-  Phone, Menu, Plus, Minus, ArrowRight, Star, ChevronLeft, ChevronRight, 
+  Plus, Minus, ArrowRight, Star, ChevronLeft, ChevronRight, 
   Car, Building, Layers, Store, Printer, Shirt, Palette, Home as HomeIcon
 } from "lucide-react";
 import { motion } from "framer-motion";
-
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
-  // Navigation menu state
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   // Capabilities items
   const capabilities = [
     { num: "01", title: "Vehicle Graphics", desc: "Expert fleet wrapping, custom decals, & full digital wraps designed in-house.", icon: "Car" },
@@ -23,7 +21,6 @@ export default function Home() {
     { num: "07", title: "Clothing & Merch", desc: "Corporate embroidery, high-grade vinyl screenprints, and giftware.", icon: "Shirt" },
     { num: "08", title: "Design Studio", desc: "Creative logos, architectural visualization layout, & brand strategy.", icon: "Palette" },
   ];
-
 
   // The Works (projects list)
   const works = [
@@ -92,57 +89,7 @@ export default function Home() {
       {/* 5-colour stripe top header line */}
       <div className="h-[6px] w-full bg-linear-to-r from-hs-purple via-hs-green via-hs-pink via-hs-blue to-hs-yellow" />
 
-      {/* HEADER / NAVIGATION */}
-      <header className="sticky top-0 z-50 bg-[#0A0A0A] border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2">
-            <span className="font-display text-2xl tracking-wider text-white">
-              Herts Signs <span className="text-hs-pink">+</span> Graphics
-            </span>
-          </a>
-
-          {/* Desktop Nav links */}
-          <nav className="hidden lg:flex items-center gap-8 font-condensed text-[15px] font-bold tracking-wider uppercase text-white/80">
-            <a href="#about" className="hover:text-hs-pink transition-colors">About Us</a>
-            <a href="#capabilities" className="hover:text-hs-pink transition-colors">Capabilities</a>
-            <a href="#works" className="hover:text-hs-pink transition-colors">The Works</a>
-            <a href="#contact" className="hover:text-hs-pink transition-colors">Contact</a>
-          </nav>
-
-          {/* Right Action button */}
-          <div className="hidden md:flex items-center gap-4">
-            <a 
-              href="tel:01707257575" 
-              className="bg-hs-orange hover:bg-hs-pink text-white font-condensed font-bold text-sm tracking-wider uppercase px-5 py-2.5 flex items-center gap-2 clip-slanted-sm transition-colors"
-            >
-              <Phone size={16} />
-              01707 257 575
-            </a>
-          </div>
-
-          {/* Mobile hamburger menu */}
-          <button 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-white/80 hover:text-white"
-          >
-            <Menu size={24} />
-          </button>
-        </div>
-
-        {/* Mobile Dropdown Menu */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden bg-[#0A0A0A] border-b border-white/10 px-6 py-4 flex flex-col gap-4 font-condensed text-lg uppercase font-bold tracking-wider">
-            <a href="#about" onClick={() => setMobileMenuOpen(false)} className="hover:text-hs-pink">About Us</a>
-            <a href="#capabilities" onClick={() => setMobileMenuOpen(false)} className="hover:text-hs-pink">Capabilities</a>
-            <a href="#works" onClick={() => setMobileMenuOpen(false)} className="hover:text-hs-pink">The Works</a>
-            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-hs-pink">Contact</a>
-            <a href="tel:01707257575" className="bg-hs-orange px-4 py-2 text-center text-sm font-bold flex items-center justify-center gap-2 clip-slanted-sm">
-              <Phone size={14} />
-              01707 257 575
-            </a>
-          </div>
-        )}
-      </header>
+      <Header />
 
       {/* HERO SECTION */}
       <section className="relative overflow-hidden min-h-[85vh] flex items-center py-16 px-4 md:px-8 border-b border-white/10">
@@ -162,7 +109,6 @@ export default function Home() {
               We <span className="text-hs-orange">Paint.</span><br />
               We <span className="relative inline-block text-[#0A0A0A]">
                 Install.
-                {/* Custom backdrop text or stroke effect if required */}
                 <span className="absolute inset-0 text-transparent [-webkit-text-stroke:2px_white] z-[-1] translate-x-[2px] translate-y-[2px]">Install.</span>
                 <span className="absolute inset-0 text-white select-none">Install.</span>
               </span>
@@ -188,9 +134,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Right Media (Van Mockup Image) */}
+          {/* Hero Right Media */}
           <div className="lg:col-span-5 relative flex justify-center">
-            {/* Dark background vignette layer */}
             <div className="absolute inset-0 bg-radial from-transparent to-[#0A0A0A] z-10 pointer-events-none" />
             <div className="relative w-full max-w-[500px] h-[450px]">
               <img 
@@ -198,7 +143,6 @@ export default function Home() {
                 alt="Branded Wrapped Van mockup" 
                 className="w-full h-full object-contain filter drop-shadow-[0_20px_50px_rgba(255,69,0,0.25)] relative z-20"
               />
-              {/* Highlight background splash */}
               <div className="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[350px] h-[350px] rounded-full bg-hs-orange/15 blur-3xl z-0" />
             </div>
           </div>
@@ -238,7 +182,6 @@ export default function Home() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-black/10">
             {capabilities.map((c, i) => {
-              // Dynamically map icon names to Lucide icons
               const IconComponent = (() => {
                 switch(c.icon) {
                   case "Car": return Car;
@@ -331,7 +274,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* DETAILED / INTERACTIVE ACCORDIONS SECTION */}
       <section className="py-20 px-4 md:px-8 bg-white text-[#0A0A0A] border-b border-black/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
@@ -349,7 +291,7 @@ export default function Home() {
               From conception to completion, our experienced teams work together under a single management flow. This guarantees premium design compliance and precise installation quality.
             </p>
             <a 
-              href="#contact" 
+              href="/contact-us" 
               className="text-[#0A0A0A] hover:text-hs-orange font-condensed text-sm font-bold uppercase tracking-widest border-b-2 border-black hover:border-hs-orange pb-1 w-fit transition-all"
             >
               See Fitting Process →
@@ -470,7 +412,6 @@ export default function Home() {
             <span className="text-white/40">•</span>
             <span>Est 1993</span>
           </div>
-          {/* Logo simulations */}
           <div className="flex items-center gap-8 md:gap-16 flex-wrap">
             <span className="font-display text-lg tracking-wider text-white opacity-90">UNIVERSITY OF HERTS</span>
             <span className="font-display text-lg tracking-wider text-white opacity-90">THE GALLERIA</span>
@@ -549,18 +490,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER SIGN-OFF BANNER */}
-      <footer className="bg-white text-[#0A0A0A] py-16 px-4 md:px-8 text-center border-t border-black/10">
-        <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-none tracking-tight">
-            Made in Hertfordshire.<br />
-            <span className="text-hs-orange">Deployed Nationwide.</span>
-          </h2>
-          <p className="font-condensed font-semibold text-xs tracking-widest text-black/50 uppercase mt-4">
-            © 1993 - {new Date().getFullYear()} Herts Signs Group Ltd. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );

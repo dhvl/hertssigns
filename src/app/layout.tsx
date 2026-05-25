@@ -20,9 +20,41 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Signage & Printing Services in Hertfordshire - Herts Signs",
-  description: "Herts Signs Group — Hertfordshire's leading signage, vehicle wrapping & printing company since 1993.",
+  title: "Signage & Printing Services in Hertfordshire - Herts Signs Group",
+  description: "Herts Signs Group — Hertfordshire's leading signage, vehicle wrapping & printing company since 1993. Shop signs, vehicle graphics, large format printing & more. Call +44 1707 257 575.",
+  keywords: ["signage hertfordshire", "vehicle wrapping hertfordshire", "sign makers hertfordshire", "car wrapping hatfield", "van graphics welwyn garden city", "shop signs hertfordshire", "large format printing hertfordshire", "vehicle graphics hertfordshire", "fleet graphics", "herts signs group"],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://www.hertssigns.co.uk/",
+    title: "Signage & Printing Services in Hertfordshire - Herts Signs Group",
+    description: "Hertfordshire's leading signage, vehicle wrapping & printing company since 1993. Call +44 1707 257 575.",
+    images: [
+      {
+        url: "https://www.hertssigns.co.uk/img/logo.png",
+        width: 200,
+        height: 50,
+        alt: "Herts Signs Group Logo",
+      }
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@hertssigns",
+    title: "Signage & Printing Services in Hertfordshire - Herts Signs Group",
+    description: "Hertfordshire's leading signage, vehicle wrapping & printing company since 1993. Call +44 1707 257 575.",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
 };
+
 
 export default function RootLayout({
   children,
