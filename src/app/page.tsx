@@ -1,7 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import { Phone, Menu, Plus, Minus, ArrowRight, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { 
+  Phone, Menu, Plus, Minus, ArrowRight, Star, ChevronLeft, ChevronRight, 
+  Car, Building, Layers, Store, Printer, Shirt, Palette, Home as HomeIcon
+} from "lucide-react";
+import { motion } from "framer-motion";
+
 
 export default function Home() {
   // Navigation menu state
@@ -9,15 +14,16 @@ export default function Home() {
 
   // Capabilities items
   const capabilities = [
-    { num: "01", title: "Vehicle Graphics" },
-    { num: "02", title: "Interior Signage" },
-    { num: "03", title: "Exterior Signage" },
-    { num: "04", title: "Window Films" },
-    { num: "05", title: "Exhibition Stands" },
-    { num: "06", title: "Large Format" },
-    { num: "07", title: "Clothing & Merch" },
-    { num: "08", title: "Design Studio" },
+    { num: "01", title: "Vehicle Graphics", desc: "Expert fleet wrapping, custom decals, & full digital wraps designed in-house.", icon: "Car" },
+    { num: "02", title: "Interior Signage", desc: "Illuminated signs, bespoke architectural lettering, & corporate wall graphics.", icon: "Home" },
+    { num: "03", title: "Exterior Signage", desc: "Premium shopfront fascias, durable pavement signs, & outdoor boards.", icon: "Building" },
+    { num: "04", title: "Window Films", desc: "Frosting, manifestation, reflective privacy film, & solar control options.", icon: "Layers" },
+    { num: "05", title: "Exhibition Stands", desc: "High-impact event setups, modular pop-up banner stands, & displays.", icon: "Store" },
+    { num: "06", title: "Large Format", desc: "Giant PVC banners, architectural mesh, high-res posters, & blueprints.", icon: "Printer" },
+    { num: "07", title: "Clothing & Merch", desc: "Corporate embroidery, high-grade vinyl screenprints, and giftware.", icon: "Shirt" },
+    { num: "08", title: "Design Studio", desc: "Creative logos, architectural visualization layout, & brand strategy.", icon: "Palette" },
   ];
+
 
   // The Works (projects list)
   const works = [
@@ -222,27 +228,65 @@ export default function Home() {
       </section>
 
       {/* CAPABILITIES SECTION */}
-      <section id="capabilities" className="py-20 px-4 md:px-8 bg-white text-[#0A0A0A] border-b border-black/10">
+      <section id="capabilities" className="py-20 px-4 md:px-8 bg-white text-[#0A0A0A] border-b border-black/10 overflow-hidden">
         <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="h-[2px] w-8 bg-hs-orange" />
+            <span className="font-condensed font-bold text-xs uppercase tracking-widest text-hs-orange">Our Expertise</span>
+          </div>
           <h2 className="text-5xl md:text-6xl font-black mb-12 tracking-tight">Capabilities</h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-black/10">
-            {capabilities.map((c, i) => (
-              <div 
-                key={i} 
-                className="border-r border-b border-black/10 p-8 flex flex-col justify-between min-h-[220px] group hover:bg-[#0A0A0A] hover:text-white transition-all duration-300"
-              >
-                <span className="font-condensed text-[#0A0A0A]/40 group-hover:text-white/40 text-sm font-bold tracking-wider">{c.num}</span>
-                <div className="mt-8">
-                  <h3 className="text-3xl font-black leading-[0.9] uppercase">{c.title}</h3>
-                  <div className="mt-4 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                    <span className="text-hs-orange font-condensed font-bold text-xs uppercase tracking-widest flex items-center gap-1.5 cursor-pointer">
-                      View Service <ArrowRight size={12} />
-                    </span>
+            {capabilities.map((c, i) => {
+              // Dynamically map icon names to Lucide icons
+              const IconComponent = (() => {
+                switch(c.icon) {
+                  case "Car": return Car;
+                  case "Home": return HomeIcon;
+                  case "Building": return Building;
+                  case "Layers": return Layers;
+                  case "Store": return Store;
+                  case "Printer": return Printer;
+                  case "Shirt": return Shirt;
+                  case "Palette": return Palette;
+                  default: return Star;
+                }
+              })();
+
+              return (
+                <motion.div 
+                  key={i} 
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5, delay: i * 0.08, type: "spring", stiffness: 60 }}
+                  whileHover={{ scale: 1.02, backgroundColor: "#0A0A0A", color: "#FFFFFF", zIndex: 10 }}
+                  className="border-r border-b border-black/10 p-8 flex flex-col justify-between min-h-[280px] group transition-all duration-300 relative cursor-pointer"
+                >
+                  <div className="flex justify-between items-start">
+                    <span className="font-condensed text-[#0A0A0A]/40 group-hover:text-white/40 text-sm font-bold tracking-wider">{c.num}</span>
+                    <motion.div 
+                      whileHover={{ rotate: 15, scale: 1.15 }}
+                      className="text-hs-orange p-2 rounded-lg bg-hs-orange/10 group-hover:bg-white/10 group-hover:text-white transition-colors"
+                    >
+                      <IconComponent size={24} />
+                    </motion.div>
                   </div>
-                </div>
-              </div>
-            ))}
+
+                  <div className="mt-6">
+                    <h3 className="text-2xl font-black leading-[0.9] uppercase group-hover:text-hs-orange transition-colors duration-300">{c.title}</h3>
+                    <p className="text-sm text-black/60 group-hover:text-white/60 leading-snug mt-3 transition-colors duration-300">
+                      {c.desc}
+                    </p>
+                    <div className="mt-4 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                      <span className="text-hs-orange font-condensed font-bold text-xs uppercase tracking-widest flex items-center gap-1.5">
+                        View Service <ArrowRight size={12} />
+                      </span>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -261,7 +305,15 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {works.map((w, i) => (
-              <div key={i} className="group relative overflow-hidden bg-zinc-900 border border-white/10">
+              <motion.div 
+                key={i} 
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                whileHover={{ y: -6 }}
+                className="group relative overflow-hidden bg-zinc-900 border border-white/10"
+              >
                 <div className="aspect-[4/3] w-full overflow-hidden bg-zinc-950">
                   <img 
                     src={w.img} 
@@ -273,11 +325,12 @@ export default function Home() {
                   <h4 className="text-xl font-bold uppercase tracking-tight text-white">{w.title}</h4>
                   <p className="text-hs-orange font-condensed text-xs font-bold uppercase tracking-wider mt-1">{w.desc}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
+
 
       {/* DETAILED / INTERACTIVE ACCORDIONS SECTION */}
       <section className="py-20 px-4 md:px-8 bg-white text-[#0A0A0A] border-b border-black/10">
