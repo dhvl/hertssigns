@@ -96,7 +96,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Hero Left Content */}
-          <div className="lg:col-span-7 flex flex-col gap-6">
+          <div className="lg:col-span-6 flex flex-col gap-6">
             <div className="flex items-center gap-3">
               <span className="h-[2px] w-8 bg-hs-orange" />
               <span className="font-condensed font-bold text-xs uppercase tracking-widest text-hs-orange">
@@ -135,15 +135,15 @@ export default function Home() {
           </div>
 
           {/* Hero Right Media */}
-          <div className="lg:col-span-5 relative flex justify-center">
+          <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
             <div className="absolute inset-0 bg-radial from-transparent to-[#0A0A0A] z-10 pointer-events-none" />
-            <div className="relative w-full max-w-[500px] h-[450px]">
+            <div className="relative w-full max-w-[650px] h-[350px] sm:h-[450px] lg:h-[550px] xl:h-[600px] lg:scale-110 transition-transform duration-300">
               <img 
                 src="/img/herts-van-web.png" 
                 alt="Branded Wrapped Van mockup" 
                 className="w-full h-full object-contain filter drop-shadow-[0_20px_50px_rgba(255,69,0,0.25)] relative z-20"
               />
-              <div className="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[350px] h-[350px] rounded-full bg-hs-orange/15 blur-3xl z-0" />
+              <div className="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[450px] h-[450px] rounded-full bg-hs-orange/15 blur-3xl z-0" />
             </div>
           </div>
         </div>
