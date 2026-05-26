@@ -20,6 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.hertssigns.co.uk"),
   title: "Signage & Printing Services in Hertfordshire - Herts Signs Group",
   description: "Herts Signs Group — Hertfordshire's leading signage, vehicle wrapping & printing company since 1993. Shop signs, vehicle graphics, large format printing & more. Call +44 1707 257 575.",
   keywords: ["signage hertfordshire", "vehicle wrapping hertfordshire", "sign makers hertfordshire", "car wrapping hatfield", "van graphics welwyn garden city", "shop signs hertfordshire", "large format printing hertfordshire", "vehicle graphics hertfordshire", "fleet graphics", "herts signs group"],
@@ -33,9 +34,9 @@ export const metadata: Metadata = {
     description: "Hertfordshire's leading signage, vehicle wrapping & printing company since 1993. Call +44 1707 257 575.",
     images: [
       {
-        url: "https://www.hertssigns.co.uk/img/logo.png",
-        width: 200,
-        height: 50,
+        url: "/img/HS_Logo.png",
+        width: 1200,
+        height: 630,
         alt: "Herts Signs Group Logo",
       }
     ],
