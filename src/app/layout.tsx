@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Barlow_Condensed, Inter } from "next/font/google";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -68,6 +69,7 @@ export default function RootLayout({
         className={`${bebasNeue.variable} ${barlowCondensed.variable} ${inter.variable} antialiased`}
       >
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );
