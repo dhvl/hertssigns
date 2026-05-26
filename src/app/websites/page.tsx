@@ -12,19 +12,19 @@ export default function Websites() {
       title: "Care Home",
       category: "Digital Design & Graphics",
       desc: "Interactive layouts and custom wall graphics design.",
-      img: "/img/gallery/lg_format/lg_frmt_3.webp"
+      img: "/img/gallery/lg_format/lg_frmt_3.jpg"
     },
     {
       title: "Health Barn Clinic",
       category: "Window Graphics & Branding",
       desc: "Full branding design including digital display integrations.",
-      img: "/img/gallery/signage/uh_monolithCover.webp"
+      img: "/img/gallery/signage/uh_monolithCover.jpg"
     },
     {
       title: "The Galleria",
       category: "Wayfinding & Signage System",
       desc: "Directional mapping and branding layout optimization.",
-      img: "/img/gallery/signage/BrushedDibondPlusVinylGraphics_Galleria.webp"
+      img: "/img/gallery/signage/BrushedDibondPlusVinylGraphics_Galleria.jpg"
     }
   ];
 
@@ -58,7 +58,7 @@ export default function Websites() {
           {/* Left Column: Image */}
           <div className="lg:col-span-5 relative group overflow-hidden border border-black/10 bg-hs-light">
             <img 
-              src="/img/1_website-back-13.webp" 
+              src="/img/1_website-back-13.png" 
               alt="Websites and Online Presence" 
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />
@@ -103,7 +103,7 @@ export default function Websites() {
           {/* Block 1 */}
           <div className="bg-zinc-900 border border-white/5 p-8 flex flex-col gap-6 hover:border-hs-orange/30 transition-all">
             <div className="w-16 h-16 bg-hs-orange/10 flex items-center justify-center rounded-lg text-hs-orange">
-              <img src="/img/001-ux.webp" alt="UI/UX Icon" className="w-10 h-10 object-contain inverted-icon" />
+              <img src="/img/001-ux.png" alt="UI/UX Icon" className="w-10 h-10 object-contain inverted-icon" />
             </div>
             <h4 className="text-2xl font-bold uppercase text-white">UI/UX Design</h4>
             <p className="text-white/60 text-sm leading-relaxed">
@@ -114,7 +114,7 @@ export default function Websites() {
           {/* Block 2 */}
           <div className="bg-zinc-900 border border-white/5 p-8 flex flex-col gap-6 hover:border-hs-orange/30 transition-all">
             <div className="w-16 h-16 bg-hs-orange/10 flex items-center justify-center rounded-lg text-hs-orange">
-              <img src="/img/002-digital-campaign.webp" alt="SEO Icon" className="w-10 h-10 object-contain inverted-icon" />
+              <img src="/img/002-digital-campaign.png" alt="SEO Icon" className="w-10 h-10 object-contain inverted-icon" />
             </div>
             <h4 className="text-2xl font-bold uppercase text-white">Technical SEO</h4>
             <p className="text-white/60 text-sm leading-relaxed">
@@ -125,7 +125,7 @@ export default function Websites() {
           {/* Block 3 */}
           <div className="bg-zinc-900 border border-white/5 p-8 flex flex-col gap-6 hover:border-hs-orange/30 transition-all">
             <div className="w-16 h-16 bg-hs-orange/10 flex items-center justify-center rounded-lg text-hs-orange">
-              <img src="/img/003-data.webp" alt="Custom Dev Icon" className="w-10 h-10 object-contain inverted-icon" />
+              <img src="/img/003-data.png" alt="Custom Dev Icon" className="w-10 h-10 object-contain inverted-icon" />
             </div>
             <h4 className="text-2xl font-bold uppercase text-white">Custom Development</h4>
             <p className="text-white/60 text-sm leading-relaxed">

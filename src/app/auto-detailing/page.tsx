@@ -37,7 +37,7 @@ export default function AutoDetailing() {
           {/* Left Column: Image */}
           <div className="lg:col-span-5 relative group overflow-hidden border border-black/10 bg-hs-light">
             <img 
-              src="/img/autodetailing.webp" 
+              src="/img/autodetailing.jpg" 
               alt="Auto Detailing Machine Polishing" 
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />
@@ -90,7 +90,7 @@ export default function AutoDetailing() {
             <div className="bg-zinc-900 border border-white/5 p-6 flex flex-col gap-4 hover:border-hs-orange/30 transition-all">
               <div className="overflow-hidden bg-black aspect-video border border-white/10">
                 <img 
-                  src="/img/gallery/vehicle-Graphics/Gills_Before.webp" 
+                  src="/img/gallery/vehicle-Graphics/Gills_Before.jpg" 
                   alt="Detailing Stage 1: Before" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -108,7 +108,7 @@ export default function AutoDetailing() {
             <div className="bg-zinc-900 border border-white/5 p-6 flex flex-col gap-4 hover:border-hs-orange/30 transition-all">
               <div className="overflow-hidden bg-black aspect-video border border-white/10">
                 <img 
-                  src="/img/gallery/vehicle-Graphics/Gills_During.webp" 
+                  src="/img/gallery/vehicle-Graphics/Gills_During.jpg" 
                   alt="Detailing Stage 2: During" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -126,7 +126,7 @@ export default function AutoDetailing() {
             <div className="bg-zinc-900 border border-white/5 p-6 flex flex-col gap-4 hover:border-hs-orange/30 transition-all">
               <div className="overflow-hidden bg-black aspect-video border border-white/10">
                 <img 
-                  src="/img/gallery/vehicle-Graphics/Gills_After.webp" 
+                  src="/img/gallery/vehicle-Graphics/Gills_After.jpg" 
                   alt="Detailing Stage 3: After" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />

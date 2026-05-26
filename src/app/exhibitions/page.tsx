@@ -37,7 +37,7 @@ export default function Exhibitions() {
           {/* Left Column: Image */}
           <div className="lg:col-span-5 relative group overflow-hidden border border-black/10 bg-hs-light">
             <img 
-              src="/img/herts-exhibitions-min.webp" 
+              src="/img/herts-exhibitions-min.png" 
               alt="Herts Exhibition Displays" 
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />

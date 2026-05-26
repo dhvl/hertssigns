@@ -41,31 +41,31 @@ export default function Printing() {
       title: "Cereal Partners",
       category: "Wall Graphics",
       desc: "Digitally printed wall graphics to internal staff area.",
-      img: "/img/gallery/lg_format/lg_frmt_01.webp"
+      img: "/img/gallery/lg_format/lg_frmt_01.jpg"
     },
     {
       title: "St George's Shopping Centre",
       category: "Family Area Displays",
       desc: "Digitally printed wall graphics for family zones.",
-      img: "/img/gallery/lg_format/lg_frmt_00.webp"
+      img: "/img/gallery/lg_format/lg_frmt_00.jpg"
     },
     {
       title: "Care Home Installation",
       category: "Bespoke Wall Coverings",
       desc: "Digitally printed wall covering in a care home corridor.",
-      img: "/img/gallery/lg_format/lg_frmt_3.webp"
+      img: "/img/gallery/lg_format/lg_frmt_3.jpg"
     },
     {
       title: "Health Barn Clinic",
       category: "Window Graphics",
       desc: "High-density digitally printed window graphics.",
-      img: "/img/gallery/lg_format/lg_frmt_1.webp"
+      img: "/img/gallery/lg_format/lg_frmt_1.jpg"
     },
     {
       title: "Mather Marshall",
       category: "Office Wallpapers",
       desc: "Digitally printed wall covering in an estate agents office.",
-      img: "/img/gallery/lg_format/lg_frmt_6.webp"
+      img: "/img/gallery/lg_format/lg_frmt_6.jpg"
     }
   ];
 
@@ -99,7 +99,7 @@ export default function Printing() {
           {/* Left Column: Image */}
           <div className="lg:col-span-5 relative group overflow-hidden border border-black/10 bg-hs-light">
             <img 
-              src="/img/1_stationary-back-min.webp" 
+              src="/img/1_stationary-back-min.png" 
               alt="Stationery Printing &amp; Branding" 
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />
@@ -214,7 +214,7 @@ export default function Printing() {
           {/* Right Column: Image */}
           <div className="lg:col-span-5 relative group overflow-hidden border border-black/10 bg-hs-light order-1 lg:order-2">
             <img 
-              src="/img/1_large-format-printing-back-min.webp" 
+              src="/img/1_large-format-printing-back-min.png" 
               alt="Large Format Printing" 
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />

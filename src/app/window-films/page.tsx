@@ -12,25 +12,25 @@ export default function WindowFilms() {
       title: "University of Hertfordshire",
       category: "Etched Glass Manifestation",
       desc: "Etch effect vinyl to glass in main office zones.",
-      img: "/img/gallery/window_films/WindowFilms_EtchManifestation_UH.webp"
+      img: "/img/gallery/window_films/WindowFilms_EtchManifestation_UH.jpg"
     },
     {
       title: "Residential Tinting",
       category: "Coloured Etch Film",
       desc: "Coloured etched films applied to home windows.",
-      img: "/img/gallery/window_films/WindowFilms_ColouredEtch.webp"
+      img: "/img/gallery/window_films/WindowFilms_ColouredEtch.jpg"
     },
     {
       title: "Global Sporting Connections",
       category: "Digital Print & Etch",
       desc: "Digitally printed window film backed with etch vinyl.",
-      img: "/img/gallery/window_films/WindowFilms_DigitalFrosted Etch.webp"
+      img: "/img/gallery/window_films/WindowFilms_DigitalFrosted Etch.jpg"
     },
     {
       title: "Swallow Dell School",
       category: "School Graphics & Etch",
       desc: "Digitally printed window graphics with etched vinyl border.",
-      img: "/img/sd.webp"
+      img: "/img/sd.jpg"
     }
   ];
 
@@ -64,7 +64,7 @@ export default function WindowFilms() {
           {/* Left Column: Image */}
           <div className="lg:col-span-5 relative group overflow-hidden border border-black/10 bg-hs-light">
             <img 
-              src="/img/uh.webp" 
+              src="/img/uh.jpg" 
               alt="Vehicle Window Tinting" 
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />
@@ -137,7 +137,7 @@ export default function WindowFilms() {
           {/* Right Column: Image */}
           <div className="lg:col-span-5 relative group overflow-hidden border border-white/10 bg-zinc-900 order-1 lg:order-2">
             <img 
-              src="/img/commercialtint.webp" 
+              src="/img/commercialtint.jpg" 
               alt="Commercial Building Solar Tinting" 
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />
@@ -153,7 +153,7 @@ export default function WindowFilms() {
           {/* Left Column: Image */}
           <div className="lg:col-span-5 relative group overflow-hidden border border-black/10 bg-hs-light">
             <img 
-              src="/img/sd.webp" 
+              src="/img/sd.jpg" 
               alt="Etched Glass Privacy Manifestation" 
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />

@@ -62,7 +62,7 @@ export default function Clothing() {
           {/* Left Column: Image */}
           <div className="lg:col-span-5 relative group overflow-hidden border border-black/10 bg-hs-light">
             <img 
-              src="/img/clothing-main.webp" 
+              src="/img/clothing-main.jpg" 
               alt="Herts Custom Printed Clothing &amp; Workwear" 
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />
@@ -117,7 +117,7 @@ export default function Clothing() {
             </p>
             <div className="overflow-hidden border border-white/10 bg-zinc-900 aspect-video hidden lg:block">
               <img 
-                src="/img/1_clothing-back-min.webp" 
+                src="/img/1_clothing-back-min.png" 
                 alt="Embroidery and Print Detail" 
                 className="w-full h-full object-cover"
               />
@@ -156,7 +156,7 @@ export default function Clothing() {
           {/* Block 1 */}
           <div className="bg-hs-light border border-black/5 p-8 flex flex-col gap-6 hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-hs-orange/10 flex items-center justify-center rounded-lg text-hs-orange">
-              <img src="/img/001-shirt.webp" alt="Workwear Icon" className="w-10 h-10 object-contain" />
+              <img src="/img/001-shirt.png" alt="Workwear Icon" className="w-10 h-10 object-contain" />
             </div>
             <h4 className="text-2xl font-black uppercase text-black">Corporate Workwear</h4>
             <p className="text-black/60 text-sm leading-relaxed">
@@ -167,7 +167,7 @@ export default function Clothing() {
           {/* Block 2 */}
           <div className="bg-hs-light border border-black/5 p-8 flex flex-col gap-6 hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-hs-orange/10 flex items-center justify-center rounded-lg text-hs-orange">
-              <img src="/img/002-id-card.webp" alt="Merchandise Icon" className="w-10 h-10 object-contain" />
+              <img src="/img/002-id-card.png" alt="Merchandise Icon" className="w-10 h-10 object-contain" />
             </div>
             <h4 className="text-2xl font-black uppercase text-black">Merchandise</h4>
             <p className="text-black/60 text-sm leading-relaxed">
@@ -178,7 +178,7 @@ export default function Clothing() {
           {/* Block 3 */}
           <div className="bg-hs-light border border-black/5 p-8 flex flex-col gap-6 hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-hs-orange/10 flex items-center justify-center rounded-lg text-hs-orange">
-              <img src="/img/tea.webp" alt="Mugs Icon" className="w-10 h-10 object-contain" />
+              <img src="/img/tea.png" alt="Mugs Icon" className="w-10 h-10 object-contain" />
             </div>
             <h4 className="text-2xl font-black uppercase text-black">Mugs &amp; Gift Items</h4>
             <p className="text-black/60 text-sm leading-relaxed">
