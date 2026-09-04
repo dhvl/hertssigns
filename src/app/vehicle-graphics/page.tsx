@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <main>
       
- ===================== SUB-HERO ===================== 
+  
 <section className="subhero">
 <div className="wrap">
 <span className="breadcrumb"><a href="/">Home</a> / <a href="#">Services</a> / Vehicle Graphics &amp; Wrapping</span>
@@ -32,7 +32,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== SUB-SERVICES ===================== 
+  
 <section>
 <div className="wrap">
 <div className="section-head">
@@ -63,7 +63,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== PROCESS ===================== 
+  
 <section>
 <div className="wrap">
 <div className="section-head">
@@ -94,7 +94,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== WHY IT'S WORTH IT ===================== 
+  
 <section>
 <div className="wrap">
 <div className="section-head reveal-up">
@@ -114,7 +114,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== DESIGN BRIEF ===================== 
+  
 <section>
 <div className="wrap">
 <div className="section-head reveal-up">
@@ -128,7 +128,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== SHOWCASE ===================== 
+  
 <section className="showcase">
 <div className="wrap showcase-grid">
 <div className="showcase-copy">
@@ -144,7 +144,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== AI DESIGN GUIDE ===================== 
+  
 <section>
 <div className="wrap">
 <div className="section-head reveal-up">
@@ -157,7 +157,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== PAGE CTA ===================== 
+  
 <section className="page-cta">
 <div className="wrap">
 <h2>Ready to put your van to work?</h2>

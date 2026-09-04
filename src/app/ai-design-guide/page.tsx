@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <main>
       
- ===================== SUB-HERO ===================== 
+  
 <section className="subhero">
 <div className="wrap">
 <span className="breadcrumb"><a href="/">Home</a> / Designing with AI</span>
@@ -194,7 +194,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== PAGE CTA ===================== 
+  
 <section className="page-cta">
 <div className="wrap">
 <h2>Got an idea? Let's talk.</h2>

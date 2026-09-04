@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <main>
       
- ===================== HERO ===================== 
+  
 <section className="hero">
 <div className="wrap hero-grid">
 <div>
@@ -40,7 +40,7 @@ export default function Page() {
 </div>
 </section>
 <div className="wrap"><div className="divider"></div></div>
- ===================== TRUST STRIP ===================== 
+  
 <div className="wrap">
 <div className="trust-strip trust-strip--center">
 <span className="trust-item"><b>£10M</b> Public Liability</span>
@@ -51,7 +51,7 @@ export default function Page() {
 <span className="trust-item"><b>CSCS</b></span>
 </div>
 </div>
- ===================== LOGO STRIP ===================== 
+  
 <div className="wrap">
 <div className="logo-strip logo-strip--center">
 <span className="logo-credit" data-label="Preferred Supplier">
@@ -67,11 +67,11 @@ export default function Page() {
 <img alt="Savills Property Management - contracted supplier" className="logo-strip-item logo-strip-item--crest" src="/img/savills.png"/>
 </span>
 <span className="logo-credit" data-label="Contracted Supplier">
-<img alt="Hatfield Town Council — contracted supplier" className="logo-strip-item" src="/img/htc2.png"/>
+<img alt="Hatfield Town Council — contracted supplier" className="logo-strip-item" src="/img/HTC2.png"/>
 </span>
 </div>
 </div>
- ===================== CAPABILITIES ===================== 
+  
 <section id="services">
 <div className="wrap">
 <div className="section-head reveal-up">
@@ -130,7 +130,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== SHOWCASE / VIBRANT CTA ===================== 
+  
 <section className="showcase">
 <div className="wrap showcase-grid">
 <div className="showcase-copy reveal-up">
@@ -150,7 +150,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== WORK TEASER ===================== 
+  
 <section>
 <div className="wrap">
 <div className="section-head reveal-up">
@@ -185,7 +185,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- ===================== REVIEWS ===================== 
+  
  Sourced from Herts Signs & Graphics Ltd's Google Business Profile,
        5-star reviews only, copied verbatim by Jon. Swap or add to this
        list as new reviews come in — see .review-card in styles.css. 
