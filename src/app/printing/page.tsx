@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Large Format & Printing | Herts Signs Group",
-  description: "Banners, mesh, posters and branded stationery, printed at scale with eco-friendly inks. Herts Signs Group, Hertfordshire.",
+  title: "Large Format Printing & Banners Hertfordshire | Herts Signs",
+  description: "High-resolution large format printing in Hertfordshire. PVC & mesh banners, exhibition graphics, site hoardings, posters, and corporate stationery printed in Welwyn Garden City with fast turnaround.",
+  keywords: ['large format printing hertfordshire', 'banner printing welwyn garden city', 'poster printing hatfield', 'site hoardings hertfordshire', 'commercial print st albans'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/printing",
+  },
+  openGraph: {
+    title: "Large Format Printing & Banners Hertfordshire | Herts Signs",
+    description: "High-resolution large format printing in Hertfordshire. PVC & mesh banners, exhibition graphics, site hoardings, posters, and corporate stationery printed in Welwyn Garden City with fast turnaround.",
+    url: "https://www.hertssigns.co.uk/printing",
+  },
 };
 
 export default function Page() {

@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Our Work | Herts Signs Group",
-  description: "Recent signage, vehicle wrapping and print projects from Herts Signs Group, Hertfordshire.",
+  title: "Our Work & Signage Portfolio | Herts Signs Group",
+  description: "Explore our portfolio of recent commercial signage, vehicle wrapping, and large format printing projects across Hertfordshire, London, and the UK.",
+  keywords: ['herts signs portfolio', 'signage examples hertfordshire', 'van wrap gallery welwyn', 'commercial signs case studies'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/work",
+  },
+  openGraph: {
+    title: "Our Work & Signage Portfolio | Herts Signs Group",
+    description: "Explore our portfolio of recent commercial signage, vehicle wrapping, and large format printing projects across Hertfordshire, London, and the UK.",
+    url: "https://www.hertssigns.co.uk/work",
+  },
 };
 
 export default function Page() {

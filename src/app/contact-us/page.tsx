@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Herts Signs Group",
-  description: "Get in touch with Herts Signs Group, Welwyn Garden City. Call, email, or send a quote request.",
+  title: "Contact Herts Signs | 6 Blenheim Court, Welwyn Garden City",
+  description: "Get in touch with Herts Signs for a free bespoke quote on signage, vehicle graphics, or large format printing. Call 01707 257 575 or visit our Welwyn Garden City workshop.",
+  keywords: ['contact herts signs', 'herts signs phone number', 'sign makers welwyn garden city contact', 'herts signs quote'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/contact-us",
+  },
+  openGraph: {
+    title: "Contact Herts Signs | 6 Blenheim Court, Welwyn Garden City",
+    description: "Get in touch with Herts Signs for a free bespoke quote on signage, vehicle graphics, or large format printing. Call 01707 257 575 or visit our Welwyn Garden City workshop.",
+    url: "https://www.hertssigns.co.uk/contact-us",
+  },
 };
 
 export default function Page() {

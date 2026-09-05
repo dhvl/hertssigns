@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Design Studio | Herts Signs Group",
-  description: "Logos, brand systems and layout, designed in-house knowing exactly how it'll be produced. Herts Signs Group, Hertfordshire.",
+  title: "Logo & Brand Design Studio Hertfordshire | Herts Signs",
+  description: "Professional brand identity design, logo creation, vector redrawing, and 3D architectural sign visualisations in Hertfordshire. Crafted by experienced designers who understand fabrication.",
+  keywords: ['logo design hertfordshire', 'branding agency welwyn garden city', 'graphic design hatfield', 'signage design studio', 'brand identity st albans'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/design",
+  },
+  openGraph: {
+    title: "Logo & Brand Design Studio Hertfordshire | Herts Signs",
+    description: "Professional brand identity design, logo creation, vector redrawing, and 3D architectural sign visualisations in Hertfordshire. Crafted by experienced designers who understand fabrication.",
+    url: "https://www.hertssigns.co.uk/design",
+  },
 };
 
 export default function Page() {

@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Vehicle Graphics & Wrapping | Herts Signs Group",
-  description: "Full and partial vehicle wraps, fleet livery and cut decals — designed, printed and fitted in-house by Herts Signs Group, Hertfordshire.",
+  title: "Vehicle Graphics & Van Wrapping Hertfordshire | Herts Signs",
+  description: "Commercial van wraps, vehicle graphics, and fleet livery specialists in Hertfordshire. In-house design, premium cast vinyl printing, and certified vehicle wrap installation in Welwyn Garden City. Call 01707 257 575.",
+  keywords: ['vehicle graphics hertfordshire', 'van wrapping welwyn garden city', 'car decals hatfield', 'fleet livery hertfordshire', 'van wraps st albans', 'commercial vehicle wrapping'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/vehicle-graphics",
+  },
+  openGraph: {
+    title: "Vehicle Graphics & Van Wrapping Hertfordshire | Herts Signs",
+    description: "Commercial van wraps, vehicle graphics, and fleet livery specialists in Hertfordshire. In-house design, premium cast vinyl printing, and certified vehicle wrap installation in Welwyn Garden City. Call 01707 257 575.",
+    url: "https://www.hertssigns.co.uk/vehicle-graphics",
+  },
 };
 
 export default function Page() {

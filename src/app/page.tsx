@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Herts Signs Group — Signage, Vehicle Wrapping & Printing | Hertfordshire",
-  description: "Hertfordshire's signage, vehicle wrapping and printing specialists since 1993. Designed and made in-house, installed by our own team.",
+  title: "Signage & Printing Services in Hertfordshire | Herts Signs",
+  description: "Hertfordshire's leading signage, vehicle wrapping, large format printing, and window film specialists since 1993. Designed & installed by our in-house team in Welwyn Garden City. Call 01707 257 575.",
+  keywords: ['signage hertfordshire', 'sign makers hertfordshire', 'vehicle graphics hertfordshire', 'van wrapping welwyn garden city', 'shop signs hertfordshire', 'large format printing hertfordshire'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/",
+  },
+  openGraph: {
+    title: "Signage & Printing Services in Hertfordshire | Herts Signs",
+    description: "Hertfordshire's leading signage, vehicle wrapping, large format printing, and window film specialists since 1993. Designed & installed by our in-house team in Welwyn Garden City. Call 01707 257 575.",
+    url: "https://www.hertssigns.co.uk/",
+  },
 };
 
 export default function Page() {

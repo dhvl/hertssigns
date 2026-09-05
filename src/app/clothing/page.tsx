@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Clothing & Merchandise | Herts Signs Group",
-  description: "Corporate embroidery, screenprint and branded giftware for teams and trade events. Herts Signs Group, Hertfordshire.",
+  title: "Branded Workwear & Clothing Merchandise Hertfordshire | Herts Signs",
+  description: "Custom corporate workwear, embroidered polo shirts, high-vis uniforms, and promotional merchandise in Hertfordshire. Quality embroidery and screen printing in Welwyn Garden City.",
+  keywords: ['workwear printing hertfordshire', 'embroidered uniform welwyn garden city', 'custom clothing hatfield', 'corporate merchandise st albans', 'tshirt printing hertfordshire'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/clothing",
+  },
+  openGraph: {
+    title: "Branded Workwear & Clothing Merchandise Hertfordshire | Herts Signs",
+    description: "Custom corporate workwear, embroidered polo shirts, high-vis uniforms, and promotional merchandise in Hertfordshire. Quality embroidery and screen printing in Welwyn Garden City.",
+    url: "https://www.hertssigns.co.uk/clothing",
+  },
 };
 
 export default function Page() {

@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Websites & SEO | Herts Signs Group",
-  description: "Websites, UI/UX design, technical SEO and custom development from Herts Signs Group, delivered with our digital partners UiX Studios.",
+  title: "Website Design & SEO Services Hertfordshire | Herts Signs & UiX",
+  description: "High-performance website design, Next.js web development, and Google SEO services in Hertfordshire. Built in partnership with UiX Studios for local businesses looking to dominate search.",
+  keywords: ['website design hertfordshire', 'web development welwyn garden city', 'seo agency hertfordshire', 'local seo hatfield', 'business websites st albans'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/websites",
+  },
+  openGraph: {
+    title: "Website Design & SEO Services Hertfordshire | Herts Signs & UiX",
+    description: "High-performance website design, Next.js web development, and Google SEO services in Hertfordshire. Built in partnership with UiX Studios for local businesses looking to dominate search.",
+    url: "https://www.hertssigns.co.uk/websites",
+  },
 };
 
 export default function Page() {

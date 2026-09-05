@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | Herts Signs Group",
-  description: "Established 1993. Herts Signs Group designs, manufactures and installs signage, vehicle graphics and print for clients across the UK.",
+  title: "About Us - 30+ Years Sign Makers in Hertfordshire | Herts Signs",
+  description: "Learn about Herts Signs Group. Established in 1993, we are Hertfordshire's trusted team for in-house sign design, print manufacturing, and certified installation based in Welwyn Garden City.",
+  keywords: ['about herts signs', 'sign company welwyn garden city', 'sign makers established 1993', 'hertfordshire signage team'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/about-us",
+  },
+  openGraph: {
+    title: "About Us - 30+ Years Sign Makers in Hertfordshire | Herts Signs",
+    description: "Learn about Herts Signs Group. Established in 1993, we are Hertfordshire's trusted team for in-house sign design, print manufacturing, and certified installation based in Welwyn Garden City.",
+    url: "https://www.hertssigns.co.uk/about-us",
+  },
 };
 
 export default function Page() {

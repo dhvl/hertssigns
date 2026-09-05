@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Signage | Herts Signs Group",
-  description: "Illuminated fascias, shopfronts and architectural lettering — designed and manufactured in-house by Herts Signs Group, Hertfordshire, and installed by our own fitting team.",
+  title: "Commercial & Shopfront Signage Hertfordshire | Herts Signs",
+  description: "Bespoke commercial, shopfront, and architectural signage in Hertfordshire. Illuminated 3D letters, monolith totems, wayfinding and fascia signs made and installed in Welwyn Garden City, Hatfield & St Albans.",
+  keywords: ['sign makers hertfordshire', 'shop signs hertfordshire', 'commercial signage welwyn garden city', 'illuminated signs hatfield', 'architectural signage st albans', 'fret cut letters'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/signage",
+  },
+  openGraph: {
+    title: "Commercial & Shopfront Signage Hertfordshire | Herts Signs",
+    description: "Bespoke commercial, shopfront, and architectural signage in Hertfordshire. Illuminated 3D letters, monolith totems, wayfinding and fascia signs made and installed in Welwyn Garden City, Hatfield & St Albans.",
+    url: "https://www.hertssigns.co.uk/signage",
+  },
 };
 
 export default function Page() {

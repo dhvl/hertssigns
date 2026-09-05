@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Exhibitions & Display Stands | Herts Signs Group",
-  description: "Modular pop-up stands and event displays, designed and produced by Herts Signs Group, Hertfordshire.",
+  title: "Exhibition Stands & Display Graphics Hertfordshire | Herts Signs",
+  description: "Modular exhibition stands, roller banners, pop-up backdrops, and promotional event displays designed and fabricated in Hertfordshire for trade shows across the UK.",
+  keywords: ['exhibition stands hertfordshire', 'roller banners welwyn garden city', 'event display graphics', 'trade show pop up stands', 'exhibition printing london'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/exhibitions",
+  },
+  openGraph: {
+    title: "Exhibition Stands & Display Graphics Hertfordshire | Herts Signs",
+    description: "Modular exhibition stands, roller banners, pop-up backdrops, and promotional event displays designed and fabricated in Hertfordshire for trade shows across the UK.",
+    url: "https://www.hertssigns.co.uk/exhibitions",
+  },
 };
 
 export default function Page() {

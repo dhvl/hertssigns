@@ -3,8 +3,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Window Films | Herts Signs Group",
-  description: "Frosting, manifestation, privacy and solar control window film for offices, retail and vehicles. Supplied and fitted by Herts Signs Group, Hertfordshire.",
+  title: "Window Manifestation & Privacy Films Hertfordshire | Herts Signs",
+  description: "DDA compliant frosted window manifestation, solar heat control film, and office glass branding across Hertfordshire. Bubble-free commercial installation in Welwyn Garden City, Hatfield & London.",
+  keywords: ['window films hertfordshire', 'window manifestation welwyn garden city', 'office privacy film st albans', 'solar window tinting hertfordshire', 'etched glass manifestation'],
+  alternates: {
+    canonical: "https://www.hertssigns.co.uk/window-films",
+  },
+  openGraph: {
+    title: "Window Manifestation & Privacy Films Hertfordshire | Herts Signs",
+    description: "DDA compliant frosted window manifestation, solar heat control film, and office glass branding across Hertfordshire. Bubble-free commercial installation in Welwyn Garden City, Hatfield & London.",
+    url: "https://www.hertssigns.co.uk/window-films",
+  },
 };
 
 export default function Page() {
