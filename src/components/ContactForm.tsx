@@ -63,9 +63,20 @@ export function ContactForm() {
         throw new Error(data.error || "Failed to send inquiry. Please try again.");
       }
 
+      const serviceVal = (formData.get("service") as string) || "General Inquiry";
+      
       setSuccess(true);
       setFiles([]);
       if (formRef.current) formRef.current.reset();
+
+      // Trigger Google Analytics (GA4) generate_lead conversion event
+      if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+        (window as any).gtag("event", "generate_lead", {
+          event_category: "Contact",
+          event_label: serviceVal,
+          value: 1,
+        });
+      }
     } catch (err: any) {
       setError(err.message || "An unexpected error occurred. Please call 01707 257 575.");
     } finally {
