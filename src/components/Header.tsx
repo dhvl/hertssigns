@@ -78,6 +78,11 @@ export function Header() {
               </Link>
             </li>
             <li>
+              <Link href="/blog" onClick={() => setMobileOpen(false)}>
+                Blog
+              </Link>
+            </li>
+            <li>
               <Link href="/contact-us" onClick={() => setMobileOpen(false)}>
                 Contact
               </Link>
