@@ -25,8 +25,8 @@ export default function Page() {
 </div>
 </div>
 <div className="subhero-image">
-{/*  PLACEHOLDER: replace with a real window film installation photo  */}
-<img alt="Frosted window film installation, placeholder image" src="https://hertssigns.vercel.app/img/signage-cut-viny.png"/>
+
+<img alt="Frosted window film installation, placeholder image" src="/img/signage-cut-viny.png"/>
 </div>
 </div>
 </div>

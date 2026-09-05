@@ -30,25 +30,24 @@ export default function Page() {
 <button className="filter-tab" data-filter="exhibitions">Exhibitions</button>
 <button className="filter-tab" data-filter="clothing">Clothing &amp; Merch</button>
 </div>
-{/*  PLACEHOLDER: all items below use existing site photos or stand-ins.
-           Replace src and data-category-confirmed details with real project photos as they come in.  */}
+
 <div className="work-grid-full" id="work-grid">
 <div className="work-card" data-category="signage">
-<img alt="Sovereign Network Group signage installation" src="https://hertssigns.vercel.app/img/signage-cut-viny.png"/>
+<img alt="Sovereign Network Group signage installation" src="/img/signage-cut-viny.png"/>
 <div className="tag">
 <div className="client">Sovereign Network Group</div>
 <div className="service">Signage, Cut Vinyl</div>
 </div>
 </div>
 <div className="work-card" data-category="vehicle">
-<img alt="T.J. Fire and Security van wrap" src="https://hertssigns.vercel.app/img/t-j-fire-security%20.jpg"/>
+<img alt="T.J. Fire and Security van wrap" src="/img/t-j-fire-security.jpg"/>
 <div className="tag">
 <div className="client">T.J. Fire &amp; Security</div>
 <div className="service">Car Wrapping</div>
 </div>
 </div>
 <div className="work-card" data-category="signage">
-<img alt="Hertfordshire Combat Centre signage" src="https://hertssigns.vercel.app/img/Hertfordshire%20Combat%20Centre%20sign%20supplied%20and%20installed.jpg"/>
+<img alt="Hertfordshire Combat Centre signage" src="/img/hertfordshire-combat-centre.jpg"/>
 <div className="tag">
 <div className="client">Hertfordshire Combat Centre</div>
 <div className="service">Signage Supplied &amp; Installed</div>
@@ -61,7 +60,7 @@ export default function Page() {
 <div className="service">Full Vehicle Wrap</div>
 </div>
 </div>
-{/*  PLACEHOLDER cards: no real project photo yet, swap when available  */}
+
 <div className="work-card" data-category="signage">
 <img alt="vinyl lettering, wooden board" src="/img/countyshow.jpg"/>
 <div className="tag">

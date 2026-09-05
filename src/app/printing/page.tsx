@@ -25,8 +25,8 @@ export default function Page() {
 </div>
 </div>
 <div className="subhero-image">
-{/*  PLACEHOLDER: replace with a real large format print photo  */}
-<img alt="Large format print job, placeholder image" src="https://hertssigns.vercel.app/img/signage-cut-viny.png"/>
+
+<img alt="Large format print job, placeholder image" src="/img/signage-cut-viny.png"/>
 </div>
 </div>
 </div>

@@ -26,8 +26,8 @@ export default function Page() {
 <p className="questionnaire-prompt">Not sure exactly what you want? <a href="/logo-design-questionnaire" rel="noopener" target="_blank">Try our logo questionnaire →</a></p>
 </div>
 <div className="subhero-image">
-{/*  PLACEHOLDER: replace with a real design studio / brand work photo  */}
-<img alt="Design studio work, placeholder image" src="https://hertssigns.vercel.app/img/signage-cut-viny.png"/>
+
+<img alt="Design studio work, placeholder image" src="/img/signage-cut-viny.png"/>
 </div>
 </div>
 </div>

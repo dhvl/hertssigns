@@ -25,9 +25,7 @@ export default function Page() {
 <span className="eyebrow">Available catalogues</span>
 <h2>Six catalogues to browse.</h2>
 </div>
-{/*  PLACEHOLDER LINKS: drop the real PDFs into an /catalogues/ folder
-           with these filenames and the links below will work as-is. Each
-           opens in a new tab (browser-viewable; downloadable from there).  */}
+
 <div className="cap-grid">
 <div className="cap-card reveal-up">
 <span className="code">CAT-01</span>

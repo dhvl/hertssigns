@@ -13,7 +13,7 @@ export function Breadcrumb({ title, parent = "Home", parentUrl = "/" }: Breadcru
   return (
     <div className="relative overflow-hidden h-[40vh] min-h-[250px] flex items-center bg-[#0A0A0A] border-b border-white/10">
       
-      {/* Background Banner image with opacity overlay */}
+      
       <div 
         className="absolute inset-0 bg-cover bg-center z-0 opacity-15 filter blur-xs"
         style={{ backgroundImage: "url('/img/banner.jpg')" }}

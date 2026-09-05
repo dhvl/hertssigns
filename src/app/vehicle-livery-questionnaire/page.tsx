@@ -169,7 +169,7 @@ export default function Page() {
 <div className="field">
 <div className="label-row">
 <label htmlFor="graphicsType">Graphics type</label>
-{/*  PLACEHOLDER: supply img/vehicle-graphics-types-example.jpg, or remove this link  */}
+
 <a className="example-link" href="/img/vehicle-graphics-types-example.jpg" rel="noopener" target="_blank">View examples</a>
 </div>
 <select id="graphicsType" name="Type of vehicle graphics required">

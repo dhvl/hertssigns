@@ -159,21 +159,21 @@ export default function Page() {
 </div>
 <div className="work-grid">
 <div className="work-card reveal-up">
-<img alt="Sovereign Network Group signage installation" src="https://hertssigns.vercel.app/img/signage-cut-viny.png"/>
+<img alt="Sovereign Network Group signage installation" src="/img/signage-cut-viny.png"/>
 <div className="tag">
 <div className="client">Sovereign Network Group</div>
 <div className="service">Signage, Cut Vinyl</div>
 </div>
 </div>
 <div className="work-card reveal-up">
-<img alt="T.J. Fire and Security van wrap" src="https://hertssigns.vercel.app/img/t-j-fire-security%20.jpg"/>
+<img alt="T.J. Fire and Security van wrap" src="/img/t-j-fire-security.jpg"/>
 <div className="tag">
 <div className="client">T.J. Fire &amp; Security</div>
 <div className="service">Car Wrapping</div>
 </div>
 </div>
 <div className="work-card reveal-up">
-<img alt="Hertfordshire Combat Centre signage" src="https://hertssigns.vercel.app/img/Hertfordshire%20Combat%20Centre%20sign%20supplied%20and%20installed.jpg"/>
+<img alt="Hertfordshire Combat Centre signage" src="/img/hertfordshire-combat-centre.jpg"/>
 <div className="tag">
 <div className="client">Hertfordshire Combat Centre</div>
 <div className="service">Signage Supplied &amp; Installed</div>
@@ -186,9 +186,7 @@ export default function Page() {
 </div>
 </section>
   
- Sourced from Herts Signs & Graphics Ltd's Google Business Profile,
-       5-star reviews only, copied verbatim by Jon. Swap or add to this
-       list as new reviews come in — see .review-card in styles.css. 
+  
 <section>
 <div className="wrap">
 <div className="section-head reveal-up">

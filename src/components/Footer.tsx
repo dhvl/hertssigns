@@ -7,7 +7,9 @@ export function Footer() {
       <div className="wrap">
         <div className="footer-grid">
           <div className="footer-col">
-            <span className="logo-text">HERTS SIGNS</span>
+            <Link href="/" className="logo">
+              <img src="/img/logo.png" alt="Herts Signs Group" className="logo-img" style={{ height: "30px", width: "auto" }} />
+            </Link>
             <p style={{ marginTop: "1rem", color: "var(--c-text-dim)", fontSize: "0.88rem" }}>
               6 Blenheim Court<br />
               Welwyn Garden City<br />

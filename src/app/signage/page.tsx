@@ -26,8 +26,8 @@ export default function Page() {
 <p className="questionnaire-prompt">Not sure exactly what you want? <a href="/signage-questionnaire" rel="noopener" target="_blank">Try our signage questionnaire →</a></p>
 </div>
 <div className="subhero-image">
-{/*  PLACEHOLDER: replace with a real signage installation photo  */}
-<img alt="Illuminated shopfront sign, supplied and installed by Herts Signs" src="https://hertssigns.vercel.app/img/Hertfordshire%20Combat%20Centre%20sign%20supplied%20and%20installed.jpg"/>
+
+<img alt="Illuminated shopfront sign, supplied and installed by Herts Signs" src="/img/hertfordshire-combat-centre.jpg"/>
 </div>
 </div>
 </div>

@@ -22,16 +22,7 @@ export default function Page() {
 <section style={{paddingTop: "1.5rem"} as React.CSSProperties}>
 <div className="wrap contact-grid">
 <div>
-{/* 
-          FORM WIRING NOTE: this is a plain HTML form with no submission
-          handler attached. The action/method below are placeholders —
-          point them at whichever processor you connect (a backend
-          endpoint, Web3Forms, Formspree, etc.) before going live.
-          encType="multipart/form-data" is required for the file uploads to
-          transmit. NOTE: the processor you connect must support file
-          attachments (some only do on paid tiers) and will set its own
-          maximum file size — confirm both when wiring this up.
-         */}
+
 <form action="#" className="contact-form" encType="multipart/form-data" method="POST">
 <div className="form-row">
 <label htmlFor="name">Name</label>
