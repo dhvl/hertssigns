@@ -1304,3 +1304,91 @@ section .reveal-fade.is-visible {
     transition: none;
   }
 }
+
+/* ============================================================
+   ARTICLE / BLOG CONTENT TYPOGRAPHY & LAYOUT
+   ============================================================ */
+
+.article-content {
+  font-family: var(--f-body);
+  color: var(--c-text);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  color: var(--c-text);
+  letter-spacing: -0.015em;
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.article-content h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  line-height: 1.2;
+}
+
+.article-content h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  line-height: 1.25;
+  color: var(--c-text);
+}
+
+.article-content h3 {
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  line-height: 1.3;
+  color: var(--c-accent);
+}
+
+.article-content h4 {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: var(--c-text-dim);
+}
+
+.article-content p {
+  margin-bottom: 1.4rem;
+  color: #d1d1d6;
+}
+
+.article-content strong,
+.article-content b {
+  color: var(--c-text);
+  font-weight: 600;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 1rem 0 1.6rem 1.6rem;
+  color: #d1d1d6;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-content a {
+  color: var(--c-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+
+.article-content a:hover {
+  color: #ff7844;
+}
+
+.article-content .image,
+.article-content img {
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+  margin: 1.8rem 0;
+}
+

@@ -97,7 +97,7 @@ export default async function BlogPostPage({ params }: Props) {
             <span style={{ fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "1.5px", color: "var(--c-accent)", fontWeight: "bold" }}>
               {post.category} • {post.readTime}
             </span>
-            <h1 style={{ fontSize: "2.5rem", lineHeight: "1.2", margin: "1rem 0 1.2rem 0", color: "var(--c-text)", fontFamily: "var(--font-heading)" }}>
+            <h1 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: "1.15", margin: "1rem 0 1.2rem 0", color: "var(--c-text)", fontFamily: "var(--f-display)", fontWeight: 700 }}>
               {post.title}
             </h1>
             <p style={{ fontSize: "1.15rem", lineHeight: "1.6", color: "var(--c-text-dim)" }}>
