@@ -82,7 +82,7 @@ export default async function BlogPostPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       
-      <article className="pad-lg">
+      <article className="pad-lg" style={{ paddingBottom: "5rem" }}>
         <div className="wrap" style={{ maxWidth: "860px", margin: "0 auto" }}>
           {/* Breadcrumbs */}
           <div style={{ display: "flex", gap: "8px", alignItems: "center", fontSize: "0.85rem", color: "var(--c-text-dim)", marginBottom: "2rem" }}>
