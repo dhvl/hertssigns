@@ -13,7 +13,6 @@ export function JsonLd() {
     description:
       "Hertfordshire's leading signage, vehicle wrapping, large format printing, and window film specialists since 1993. In-house design, manufacturing, and certified installation across Welwyn Garden City, Hatfield, St Albans, Stevenage, Hertford, and Greater London.",
     telephone: "+44-1707-257-575",
-    faxNumber: "+44-1707-275-277",
     email: "sales@hertssigns.co.uk",
     priceRange: "££",
     foundingDate: "1993",
@@ -40,7 +39,7 @@ export function JsonLd() {
           "Thursday",
           "Friday",
         ],
-        opens: "08:30",
+        opens: "09:00",
         closes: "17:30",
       },
     ],

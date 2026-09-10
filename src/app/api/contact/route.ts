@@ -46,9 +46,9 @@ export async function POST(request: Request) {
     };
     const displayService = serviceLabels[service] || service;
 
-    // 1. Send Notification Email to Sales Team (From: info@, To: sales@)
+    // 1. Send Notification Email to Sales Team (From: sales@, To: sales@)
     const adminEmail = await resend.emails.send({
-      from: "Herts Signs Website <info@hertssigns.co.uk>",
+      from: "Herts Signs Website <sales@hertssigns.co.uk>",
       to: ["sales@hertssigns.co.uk"],
       replyTo: email,
       subject: `🔔 New ${formType} Inquiry: ${name} (${displayService})`,
@@ -103,10 +103,10 @@ export async function POST(request: Request) {
       attachments: attachments.length > 0 ? attachments : undefined,
     });
 
-    // 2. Send Professional Auto-Confirmation Email to Customer (From: info@, To: customer)
+    // 2. Send Professional Auto-Confirmation Email to Customer (From: sales@, To: customer)
     try {
       await resend.emails.send({
-        from: "Herts Signs Group <info@hertssigns.co.uk>",
+        from: "Herts Signs Group <sales@hertssigns.co.uk>",
         to: [email],
         subject: `Thank you for contacting Herts Signs Group - Quote Request Received`,
         html: `
@@ -126,8 +126,7 @@ export async function POST(request: Request) {
                 <h3 style="margin-top: 0; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: #E8541E;">Need urgent assistance?</h3>
                 <p style="margin: 4px 0 0 0; font-size: 14px; color: #444;">
                   Feel free to call our team directly:<br>
-                  📞 <strong>Sales:</strong> <a href="tel:01707257575" style="color: #111; text-decoration: none;">01707 257 575</a><br>
-                  📞 <strong>Design Studio:</strong> <a href="tel:01707275277" style="color: #111; text-decoration: none;">01707 275 277</a><br>
+                  📞 <strong>Tel:</strong> <a href="tel:01707257575" style="color: #111; text-decoration: none;">01707 257 575</a><br>
                   💬 <strong>WhatsApp:</strong> <a href="https://wa.me/447459367473" style="color: #25D366; text-decoration: none; font-weight: bold;">Chat with us on WhatsApp</a>
                 </p>
               </div>

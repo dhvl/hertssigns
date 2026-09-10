@@ -38,8 +38,7 @@ export function Footer() {
           <div className="footer-col">
             <h4>Get in touch</h4>
             <ul>
-              <li>Sales: <a href="tel:01707257575">01707 257 575</a></li>
-              <li>Studio: <a href="tel:01707275277">01707 275 277</a></li>
+              <li><a href="tel:01707257575">01707 257 575</a></li>
               <li><a href="mailto:sales@hertssigns.co.uk">sales@hertssigns.co.uk</a></li>
               <li><Link href="/websites">Website Design (with UiX Studios)</Link></li>
             </ul>

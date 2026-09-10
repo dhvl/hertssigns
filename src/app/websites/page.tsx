@@ -30,7 +30,7 @@ export default function Page() {
 <p className="lede" style={{marginTop: "1.2rem"} as React.CSSProperties}>Herts Signs Group has been a pioneer in branding and understands your strategic brand positioning. Our digital experts collaborate with you to build a striking online presence that reflects your premium brand.</p>
 <div className="hero-actions">
 <a className="btn-primary" href="/contact-us">Start a project →</a>
-<a className="btn-ghost" href="tel:01707275277">Call the studio</a>
+<a className="btn-ghost" href="tel:01707257575">Call 01707 257 575</a>
 </div>
 </div>
 <div className="subhero-image">
@@ -111,7 +111,7 @@ export default function Page() {
 <p className="lede">Tell us where you are now — live site, half-built, or starting from nothing — and we'll take it from there.</p>
 <div className="hero-actions">
 <a className="btn-primary" href="/contact-us">Start a project →</a>
-<a className="btn-ghost" href="tel:01707275277">Call 01707 275 277</a>
+<a className="btn-ghost" href="tel:01707257575">Call 01707 257 575</a>
 </div>
 </div>
 </section>

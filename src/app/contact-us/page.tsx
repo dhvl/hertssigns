@@ -52,23 +52,21 @@ export default function Page() {
             <div className="contact-info-block">
               <h4>Direct Telephone</h4>
               <p>
-                Sales &amp; Estimating: <a href="tel:01707257575">01707 257 575</a><br />
-                Design Studio: <a href="tel:01707275277">01707 275 277</a>
+                <a href="tel:01707257575">01707 257 575</a>
               </p>
             </div>
 
             <div className="contact-info-block">
               <h4>Email</h4>
               <p>
-                General &amp; Sales: <a href="mailto:info@hertssigns.co.uk">info@hertssigns.co.uk</a><br />
-                Artwork &amp; Proofs: <a href="mailto:sales@hertssigns.co.uk">sales@hertssigns.co.uk</a>
+                <a href="mailto:sales@hertssigns.co.uk">sales@hertssigns.co.uk</a>
               </p>
             </div>
 
             <div className="contact-info-block">
               <h4>Opening Hours</h4>
               <p>
-                Monday – Friday: 08:30 – 17:30<br />
+                Monday – Friday: 9.00am – 17.30pm<br />
                 Saturday – Sunday: Closed<br />
                 <span style={{ fontSize: "0.82rem", color: "var(--c-text-dim)" }}>
                   Fitting appointments available by prior arrangement.

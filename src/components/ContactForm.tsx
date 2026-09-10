@@ -112,7 +112,7 @@ export function ContactForm() {
           Quote Request Received!
         </h3>
         <p style={{ color: "var(--c-text-dim)", maxWidth: "520px", margin: "0 auto 1.8rem auto", lineHeight: "1.6" }}>
-          Thank you for reaching out. Your project specifications have been sent to our studio team at <strong style={{ color: "var(--c-text)" }}>info@hertssigns.co.uk</strong>. A confirmation copy has also been sent to your email.
+          Thank you for reaching out. Your project specifications have been sent to our studio team at <strong style={{ color: "var(--c-text)" }}>sales@hertssigns.co.uk</strong>. A confirmation copy has also been sent to your email.
         </p>
         <button
           onClick={() => setSuccess(false)}
